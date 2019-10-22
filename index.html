@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ 
+    <div class="container">
+      <div class="row">
+        <div class="bg-dark nav_bar">
+           
+          <div class="mini_view">
+              <div class="logo">
+                  <h2 class="ml-5">Navbar</h2>
+              </div>
+              <div class="navbox">
+                  <div class="bars"></div>
+                  <div class="bars"></div>
+                  <div class="bars"></div>
+              </div>
+          </div>
+          
+        
+          <div class="nav_bar_items justify-self-center pl-5">
+            <ul>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">About</a></li>
+                <li> <a href="#">Contact</a></li>
+            </ul>
+        
+          </div>
+       
+          <div class="main_search input-group md-form form-sm form-2 pl-0 justify-content-end  mr-5">
+              <input class="form-control my-0 py-1 red-border searchbar" type="text" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <span class="input-group-text red lighten-3" id="basic-text1"><i class="fas fa-search text-grey"
+                    aria-hidden="true"></i></span>
+              </div>
+          </div>
+
+          
+        </div>
+        
+      </div>
+    </div>
+  
+  <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script> -->
+  <script src="js/bootstrap.min.js"></script>
+<script>
+
+    let toggle = document.querySelector(".navbox");
+    let bar = document.querySelector(".nav_bar_items");
+    toggle.addEventListener("click", expand);
+
+    function expand(){
+
+  
+      bar.classList.toggle("show-lists");
+      bar.style.transition = 'all .3s';
+   
+
+    }
+
+</script>
+</body>
+</html>
